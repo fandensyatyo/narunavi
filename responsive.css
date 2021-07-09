@@ -1,0 +1,535 @@
+/* ※スマホ向け */
+@media screen and (max-width:480px) { 
+  * {
+    float: none;
+    position: static;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body.noscroll{
+    overflow: hidden;
+  }
+
+  .header-top{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .header-logo{
+    border-bottom: 3px solid rgb(99, 201, 241);
+    height: 30px;
+  }
+
+
+
+  .header-title{
+    font-size: 15px;
+    padding-left: 5px;
+    letter-spacing: 10px;
+    width: 50%;
+    border-bottom: none;
+    margin-top: 10px;
+
+  }
+
+  .header-list{
+    display: none;
+  }
+
+  #hamburger{
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon span{
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 8px;
+    transition: ease 0.75s;
+
+  }
+
+  .icon span:nth-of-type(1){
+    top: 16px;
+  }
+  
+  .icon span:nth-of-type(2){
+    top: 28px;
+  }
+  
+  .icon span:nth-of-type(3){
+    bottom: 16px;
+  }
+
+  .close span:nth-of-type(1){
+    transform: rotate(45deg);
+    top: 28px;
+  }
+
+  .close span:nth-of-type(2){
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3){
+    transform: rotate(-45deg);
+    top: 28px;
+  }
+
+  
+
+  .hamburger-list{
+    display: none;
+    position: fixed;
+    top: 60px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    font-size: 25px;
+    z-index: 10;
+    text-align: center;
+  }
+
+  ul{
+    flex-direction: column; 
+    display: flex;
+  }
+
+  .hamburger-list li{
+
+    padding-bottom: 5px;
+    border-bottom: solid 1px ;
+    padding-top: 10px;
+    
+  }
+
+
+  .hamburger-list i{
+    margin: auto 10px auto auto;
+  }
+
+  .hamburger-list .far{
+    font-size: 1em;
+  }
+
+
+  .hamburger-list a{
+    color: white;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+
+  .hamburger-list .fa-handshake{
+    margin: auto 10px auto auto;
+
+  }
+
+
+
+  
+
+  
+
+
+
+  .container{
+    height: 120px;
+    background-color: white;
+    
+  }
+
+  .fas{
+    margin-top: 30px;
+  }
+
+  .small-title{
+    letter-spacing: 2px;
+    font-size: 50px;
+  }
+
+  .contents{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .myname{
+    margin-top: 5px;
+    width: 250px;
+    margin: 10px auto 5px auto;
+  }
+
+  .contents img{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+  }
+
+  .contents p{
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 20px;
+    background-color: rgb(57, 119, 235);
+    box-shadow: 0px 0px 10px 0px #a7a7a7;         /* 吹き出し本体の影 */
+    }
+    /* 三角アイコン */
+    .contents p::before{
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      left: 50%;
+      top: -14px;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid rgb(57, 119, 235);
+      border-left: 15px solid transparent;
+      margin-left: auto;
+    }
+
+
+  .career-wrapper p{
+    font-size: 0.9em;
+    top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .career-wrapper img{
+    height: 600px;
+  }
+
+  
+  .skill-box{
+    display: block;
+  }
+
+  .skills-title{
+    margin-bottom: 0;
+  }
+
+  .skill-box section {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .ttl{
+    margin-top: 50px;
+  }
+
+  .text1{
+    letter-spacing: 1.2;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  video{
+    width: 100%;
+  }
+
+  .insta-title{
+    margin-top: 50px;
+  }
+
+  .insta img{
+    width: 30%;
+    height: 50%;
+    margin-bottom: 20px;
+    display: inline-flex;
+    margin: 10px auto 60px auto;
+  }
+
+  .youtube-title{
+    margin-top: 30px;
+  }
+
+  .youtube-contents{
+    width: 80%;
+  }
+
+  .promise-title{
+    margin-top: 5px;
+  }
+
+  .promise-conteiner1 h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+
+  }
+
+  .box1 p{
+    font-size: 15px;
+    color: black;
+    margin: auto;
+    left: auto;
+    position: static;
+    line-height: normal;
+    margin-top: 10px;
+    width: 90%;
+    opacity: 0.7;
+  }
+
+  .promise-conteiner2 h3{
+    font-size: 25px;
+    opacity: 0.9;
+    margin-bottom: 5px;
+  }
+
+  .box2 p{
+    font-size: 13px;
+    color: black;
+    margin: auto;
+    left: auto;
+    position: static;
+    line-height: normal;
+    margin-top: 10px;
+    width: 90%;
+    opacity: 0.7;
+  }
+
+
+  .promise-conteiner3 h3{
+    font-size: 27px;
+    opacity: 0.9;
+    margin-bottom: 5px;
+  }
+
+  .box3 p{
+    font-size: 15px;
+    color: black;
+    margin: auto;
+    left: auto;
+    position: static;
+    line-height: normal;
+    margin-top: 10px;
+    width: 90%;
+    opacity: 0.7;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .price-inner{
+    width: 100%;
+  }
+
+  dt{
+    width: 40%;
+    font-size: 20px;
+
+  }
+
+  dd{
+    width: calc(100% - 40%);
+    font-size: 14px;
+
+  }
+  
+  .price-wrapper p{
+    opacity: 0.8;
+    
+
+  }
+
+
+}
+
+/* ※タブレット向け */
+@media screen and (min-width:481px) and ( max-width:1024px) {
+  * {
+    float: none;
+    position: static;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body.noscroll{
+    overflow: hidden;
+  }
+
+  .header-top{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+
+  .header-title{
+    font-size: 28px;
+    padding-left: 10px;
+    letter-spacing: 10px;
+    width: 50%;
+    margin-top: 10px;
+    border-bottom: none;
+  }
+
+  .header-logo{
+    border-bottom: 3px solid rgb(99, 201, 241);
+    height: 45px;
+  }
+
+  .header-list{
+    display: none;
+  }
+
+  #hamburger{
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon span{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    border-radius: 8px;
+    transition: ease 0.75s;
+
+  }
+
+  .icon span:nth-of-type(1){
+    top: 16px;
+  }
+  
+  .icon span:nth-of-type(2){
+    top: 28px;
+  }
+  
+  .icon span:nth-of-type(3){
+    bottom: 16px;
+  }
+
+  .close span:nth-of-type(1){
+    transform: rotate(45deg);
+    top: 28px;
+  }
+
+  .close span:nth-of-type(2){
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3){
+    transform: rotate(-45deg);
+    top: 28px;
+  }
+
+  
+
+  .hamburger-list{
+    display: none;
+    position: fixed;
+    top: 60px;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.76);
+    font-size: 40px;
+    z-index: 10;
+    text-align: center;
+  }
+
+  ul{
+    flex-direction: column; 
+    display: flex;
+  }
+
+  .hamburger-list li{
+
+    padding-bottom: 5px;
+    border-bottom: solid 1px ;
+    padding-top: 10px;
+    
+  }
+
+
+  .hamburger-list i{
+    margin: auto 10px auto auto;
+  }
+
+  .hamburger-list .far{
+    font-size: 1em;
+  }
+
+
+  .hamburger-list a{
+    color: white;
+    text-align: center;
+    letter-spacing: 20px;
+  }
+
+  .hamburger-list .fa-handshake{
+    margin: auto 10px auto auto;
+
+  }
+
+  .contents img{
+    margin-left: 30px;
+  }
+
+  .contents p{
+    background: rgb(57, 119, 235);
+    font-size: 17px;
+    line-height: 35px;
+    border-radius: 30%;
+    height: 220px;
+    
+  }
+
+  .contents p::before{
+    border-right: 15px solid rgb(57, 119, 235);
+  }
+
+  .box1 p{
+    font-size: 24px;
+    line-height: 30px;
+    position: static;
+    color: black;
+    margin-top: 10px;
+
+  }
+
+  .box2 p{
+    font-size: 23px;
+    line-height: 30px;
+    position: static;
+    color: black;
+    margin-top: 10px;
+    
+  }
+
+  .box3 p{
+    font-size: 24px;
+    line-height: 30px;
+    position: static;
+    color: black;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #000;
+  }
+
+  .price-inner{
+    width: 100%;
+  }
+
+}
