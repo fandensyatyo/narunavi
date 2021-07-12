@@ -328,14 +328,14 @@
   }
 
   dt{
-    width: 40%;
+    width: 50%;
     font-size: 20px;
 
   }
 
   dd{
-    width: calc(100% - 40%);
-    font-size: 14px;
+    width: calc(100% - 50%);
+    font-size: 12px;
 
   }
   
